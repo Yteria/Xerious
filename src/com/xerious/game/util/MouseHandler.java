@@ -37,12 +37,12 @@ public class MouseHandler implements MouseListener, MouseMotionListener {
 
     @Override
     public void mousePressed(MouseEvent e) {
-
+        mouseB =e.getButton();
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-
+        mouseB = -1;
     }
 
     @Override
@@ -57,11 +57,13 @@ public class MouseHandler implements MouseListener, MouseMotionListener {
 
     @Override
     public void mouseDragged(MouseEvent e) {
-
+        mouseX = e.getX();
+        mouseY = e.getY();
     }
 
     @Override
     public void mouseMoved(MouseEvent e) {
-
+        mouseX = e.getX();
+        mouseY = e.getY();
     }
 }
